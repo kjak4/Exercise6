@@ -52,22 +52,18 @@
   color: #111111;
 }
   
-  image {
-    width: 70px;
-  }
-  
-.container {
-  display: grid;
-  grid-column: 50% 50%;
- max-width: 950px
  
   
+.container {
 
-
-
+  display: grid;
+  grid-template-columns: 50% 50%;
+ 
   
 }
 .container div {
+ display: inline-block;
+  grid-column: 50% 50%;
  
   background-color: #f1f1f1;
   border: 1px solid black;
@@ -80,9 +76,9 @@
 }
   
   .griditem {
-  
-  grid-template-columns: 50% 50%;
- padding:30px;
+   
+
+    margins:20px;
 
   }
   
@@ -101,9 +97,10 @@
 <li><a href="/">Contact</a></li>  
 </ul>
 </nav>
-<div class="container">
+
     
 <h1>At Greg's Banh Mi, we're serving up the perfect marriage of French and Vietnamese culinary traditions—crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavorus that'll make your taste buds sing.</h1>
+  <div class="container">
    <div class="griditem">
 <img src="banh-mi.jpg" alt="Perspective photo of a Banh Mi sandwhich on a wood cutting board.">
 <h2>Classic Pork Banh Mi</h2>
